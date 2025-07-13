@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sanduni Sithara - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo"> Sithara</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#activities">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sanduni Sithara</h1>
+                <p>Computer Science Undergraduate</p>
+                <a href="#about" class="cta-button">Learn More About Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="me.jpeg" alt="me" class="about-profile-img">
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate Computer Science undergraduate at the University of Sri Jayewardenepura, 
+                        with a strong interest in software development, algorithms, and emerging technologies. 
+                        Eager to apply my academic knowledge to real-world challenges,
+                        I enjoy exploring areas like machine learning, web development, and problem-solving through code.</p>
+                    <p>Committed to continuous learning and innovation, I aim to contribute to
+                        impactful tech solutions while growing as a skilled developer.
+                        I believe in the power of technology to solve complex problems and create meaningful experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-card fade-in">
+                <h3>Bachelor of Computing Honours in Computer Science</h3>
+                <p><strong>University of Sri Jayewardenepura</strong></p>
+                <p><i class="fas fa-calendar-alt"></i> Currently Pursuing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-in">                
+                    <h3>JavaScript</h3>
+                    <p>Modern web development and interactive applications</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">
+                    <h3>HTML5</h3>
+                    <p>Semantic markup and modern web standards</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">                   
+                    <h3>CSS3</h3>
+                    <p>Responsive design and modern styling</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">                 
+                    <h3>C++</h3>
+                    <p>Object-oriented programming and algorithms</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-card fade-in">                  
+                    <h3>MySQL</h3>
+                    <p>Database design and management</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra-Curricular Activities -->
+    <section id="activities" class="section">
+        <div class="container">
+            <h2>Extra-Curricular Activities</h2>
+            <div class="activities-list">
+                <div class="skill-card fade-in">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Collaboration</h3>
+                    <p>Active participant in group projects and team-based learning activities</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation & Problem Solving</h3>
+                    <p>Engaged in coding challenges and hackathons to enhance problem-solving skills</p>
+                </div>
+                <div class="skill-card fade-in">
+                    <i class="fas fa-book"></i>
+                    <h3>Continuous Learning</h3>
+                    <p>Self-directed learning in emerging technologies and programming frameworks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="education-card fade-in">
+                <h3>Technical Proficiency</h3>
+                <p>Demonstrated expertise in multiple programming languages and frameworks</p>
+                <p><i class="fas fa-code"></i> Multi-language Programming Certification</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Web-Based Attendance Tracking System</h3>
+                        <p>Collaborated with a team to design and develop a comprehensive attendance tracking system. Led the front-end development, focusing on user experience and system usability improvements.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">  
+                        <i class="fas fa-laptop-code"></i> 
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Designed and developed a responsive personal portfolio website showcasing skills, projects, and achievements. Implemented modern web technologies for optimal user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Algorithm Visualization Tool</h3>
+                        <p>Currently developing an interactive tool to visualize various sorting and searching algorithms. Aims to help students understand algorithmic concepts through visual representation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Download Section -->
+    <section class="cv-download">
+        <div class="container">
+            <h2>Download My CV</h2>
+             <p>Get a comprehensive overview of my qualifications, experience, and skills</p>
+            <a href="cv.pdf" class="download-btn" onclick="downloadCV()">
+                <i class="fas fa-download"></i> Download CV (PDF)
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-grid">
+                <div class="contact-item fade-in">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:sitharagunasekara36@gmail.com">sitharagunasekara36@gmail.com</a></p>
+                </div>
+                <div class="contact-item fade-in">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+94716987884">+94 71 698 7884</a></p>
+                </div>
+                <div class="contact-item fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Rathnapura, Sri Lanka</p>
+                </div>
+                <div class="contact-item fade-in">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a href="#linkedin" target="_blank">Connect with me</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#github" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:sitharagunasekara36@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Sanduni Sithara. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
