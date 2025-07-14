@@ -28,7 +28,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
-
+;
 nav {
     display: flex;
     justify-content: space-between;
@@ -40,6 +40,7 @@ nav {
     font-size: 1.5rem;
     font-weight: bold;
     color: #667eea;
+    font-family:Allura;
 }
 
 .nav-links {
